@@ -29,6 +29,7 @@
     "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
+    "physicsjs": "^0.7.0",
     "three": "^0.97.0"
   }
 }
