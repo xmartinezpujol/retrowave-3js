@@ -2,11 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <title>Retrowave Scene / powered by ThreeJS</title>
     <style>
-      body { margin: 0; }
+      body { margin: 0; display: flex; display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: black; }
+      #renderView { position: relative; margin: 0 auto; width: 690px; height: 690px; border: 3px solid rgba(41,61,174, .5); border-radius: 5px; display: flex; justify-content: center; align-items: center; overflow: hidden; }
+      #controlPanel { position: absolute; top: 10px; right: 10px; z-index: 100; background-color: rgba(0, 0, 0, 0.85); padding: 8px 15px; border-radius: 5px; }
+      #musicButton { cursor: pointer; display: flex; align-items: center; justify-content: center; background-color: white; border-radius: 200px; padding: 10px; width: 15px; height: 15px; }
+      .musicIcon { pointer-events: none; }
     </style>
 </head>
 <body>
+  <div id="renderView">
+    <div id=controlPanel>
+      <a id="musicButton">
+        <i class="musicIcon fa fa-pause" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
 <script type="text/javascript" src="app.js"></script></body>
 </html>
